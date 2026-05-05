@@ -25,6 +25,12 @@ DP_DC_POWER_1 = 4147
 DP_DC_CURRENT_2 = 4149
 DP_DC_VOLTAGE_2 = 4150
 DP_DC_POWER_2 = 4151
+DP_DC_CURRENT_3 = 4153
+DP_DC_VOLTAGE_3 = 4154
+DP_DC_POWER_3 = 4155
+DP_DC_CURRENT_4 = 4157
+DP_DC_VOLTAGE_4 = 4158
+DP_DC_POWER_4 = 4159
 DP_DC_POWER_TOTAL = 4169
 DP_WIFI_SIGNAL = 4172
 DP_TEMPERATURE = 4183
@@ -42,7 +48,7 @@ TUYA_DP_POLL = [4103]
 SENSOR_DEFINITIONS = [
     {
         "key": "dc_power_total_w",
-        "name": "Potenza DC Totale",
+        "name": "Puissance DC Totale",
         "device_class": SensorDeviceClass.POWER,
         "unit": "W",
         "state_class": SensorStateClass.MEASUREMENT,
@@ -50,7 +56,7 @@ SENSOR_DEFINITIONS = [
     },
     {
         "key": "ac_power_w",
-        "name": "Potenza AC",
+        "name": "Puissance AC",
         "device_class": SensorDeviceClass.POWER,
         "unit": "W",
         "state_class": SensorStateClass.MEASUREMENT,
@@ -58,7 +64,7 @@ SENSOR_DEFINITIONS = [
     },
     {
         "key": "ac_voltage_v",
-        "name": "Tensione AC",
+        "name": "Tension AC",
         "device_class": SensorDeviceClass.VOLTAGE,
         "unit": "V",
         "state_class": SensorStateClass.MEASUREMENT,
@@ -66,7 +72,7 @@ SENSOR_DEFINITIONS = [
     },
     {
         "key": "ac_frequency_hz",
-        "name": "Frequenza AC",
+        "name": "Frequence AC",
         "device_class": SensorDeviceClass.FREQUENCY,
         "unit": "Hz",
         "state_class": SensorStateClass.MEASUREMENT,
@@ -74,49 +80,91 @@ SENSOR_DEFINITIONS = [
     },
     {
         "key": "dc_voltage_1_v",
-        "name": "Tensione DC 1",
+        "name": "Tension DC 1",
         "device_class": SensorDeviceClass.VOLTAGE,
         "unit": "V",
         "state_class": SensorStateClass.MEASUREMENT,
     },
     {
         "key": "dc_current_1_a",
-        "name": "Corrente DC 1",
+        "name": "Courant DC 1",
         "device_class": SensorDeviceClass.CURRENT,
         "unit": "A",
         "state_class": SensorStateClass.MEASUREMENT,
     },
     {
         "key": "dc_power_1_w",
-        "name": "Potenza DC 1",
+        "name": "Puissance DC 1",
         "device_class": SensorDeviceClass.POWER,
         "unit": "W",
         "state_class": SensorStateClass.MEASUREMENT,
     },
     {
         "key": "dc_voltage_2_v",
-        "name": "Tensione DC 2",
+        "name": "Tension DC 2",
         "device_class": SensorDeviceClass.VOLTAGE,
         "unit": "V",
         "state_class": SensorStateClass.MEASUREMENT,
     },
     {
         "key": "dc_current_2_a",
-        "name": "Corrente DC 2",
+        "name": "Courant DC 2",
         "device_class": SensorDeviceClass.CURRENT,
         "unit": "A",
         "state_class": SensorStateClass.MEASUREMENT,
     },
     {
         "key": "dc_power_2_w",
-        "name": "Potenza DC 2",
+        "name": "Puissance DC 2",
+        "device_class": SensorDeviceClass.POWER,
+        "unit": "W",
+        "state_class": SensorStateClass.MEASUREMENT,
+    },
+    {
+        "key": "dc_voltage_3_v",
+        "name": "Tension DC 3",
+        "device_class": SensorDeviceClass.VOLTAGE,
+        "unit": "V",
+        "state_class": SensorStateClass.MEASUREMENT,
+    },
+    {
+        "key": "dc_current_3_a",
+        "name": "Courant DC 3",
+        "device_class": SensorDeviceClass.CURRENT,
+        "unit": "A",
+        "state_class": SensorStateClass.MEASUREMENT,
+    },
+    {
+        "key": "dc_power_3_w",
+        "name": "Puissance DC 3",
+        "device_class": SensorDeviceClass.POWER,
+        "unit": "W",
+        "state_class": SensorStateClass.MEASUREMENT,
+    },
+    {
+        "key": "dc_voltage_4_v",
+        "name": "Tension DC 4",
+        "device_class": SensorDeviceClass.VOLTAGE,
+        "unit": "V",
+        "state_class": SensorStateClass.MEASUREMENT,
+    },
+    {
+        "key": "dc_current_4_a",
+        "name": "Courant DC 4",
+        "device_class": SensorDeviceClass.CURRENT,
+        "unit": "A",
+        "state_class": SensorStateClass.MEASUREMENT,
+    },
+    {
+        "key": "dc_power_4_w",
+        "name": "Puissance DC 4",
         "device_class": SensorDeviceClass.POWER,
         "unit": "W",
         "state_class": SensorStateClass.MEASUREMENT,
     },
     {
         "key": "energy_total_kwh",
-        "name": "Energia Totale",
+        "name": "Energie Totale",
         "device_class": SensorDeviceClass.ENERGY,
         "unit": "kWh",
         "state_class": SensorStateClass.TOTAL_INCREASING,
@@ -124,14 +172,14 @@ SENSOR_DEFINITIONS = [
     },
     {
         "key": "temperature_c",
-        "name": "Temperatura",
+        "name": "Temperature",
         "device_class": SensorDeviceClass.TEMPERATURE,
         "unit": "°C",
         "state_class": SensorStateClass.MEASUREMENT,
     },
     {
         "key": "wifi_signal",
-        "name": "Parametro 4172",
+        "name": "Parametre 4172",
         "state_class": SensorStateClass.MEASUREMENT,
         "icon": "mdi:help-circle-outline",
     },
