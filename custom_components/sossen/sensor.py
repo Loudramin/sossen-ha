@@ -56,7 +56,7 @@ class SossenSensor(CoordinatorEntity, SensorEntity):
             "identifiers": {(DOMAIN, self.coordinator.entry.data[CONF_DEVICE_ID])},
             "name": "SOSSEN Microinverter",
             "manufacturer": "SOSSEN",
-            "model": "2in1-DE 800W",
+            "model": "4in1-FR 2400W",
         }
 
     @property

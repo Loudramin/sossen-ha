@@ -26,10 +26,10 @@ class SossenPowerLimit(CoordinatorEntity, NumberEntity):
     """Number entity to set the inverter power limit."""
 
     _attr_has_entity_name = True
-    _attr_name = "Limite Potenza"
+    _attr_name = "Limite Puissance"
     _attr_icon = "mdi:transmission-tower"
     _attr_native_min_value = 500
-    _attr_native_max_value = 1000
+    _attr_native_max_value = 2000
     _attr_native_step = 10
     _attr_native_unit_of_measurement = "W"
     _attr_mode = NumberMode.BOX
@@ -48,7 +48,7 @@ class SossenPowerLimit(CoordinatorEntity, NumberEntity):
             "identifiers": {(DOMAIN, self.coordinator.entry.data[CONF_DEVICE_ID])},
             "name": "SOSSEN Microinverter",
             "manufacturer": "SOSSEN",
-            "model": "2in1-DE 800W",
+            "model": "4in1-FR 2400W",
         }
 
     @property
